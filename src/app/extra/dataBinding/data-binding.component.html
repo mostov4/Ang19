@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-3">
+        <p>One Way Data Binding</p>
+        1. Interpolation done using {{'{'}}{{'{'}}{{'}'}}{{'}'}} 
+        <p>
+            {{firstName}}
+        </p>
+    </div>
+    <div class="col-3">
+        <p>One Way Data Binding</p>
+        2. Property binding using [] on attributes/properties of elements, [value] in  {{'<'}}  {{'input type="text" [value]="firstName">'}}  
+        <br>
+        <input type="text" [value]="firstName">
+    </div>
+    <div class="col-3">
+        <p>One Way Data Binding</p>
+
+        3. Event Binding (click) (change)
+        <br>
+        <button (click)="showWelcomeAlert()">
+            Welcome
+        </button>
+    </div>
+    <div class="col-3">
+        <p>Two Way Data Binding</p>
+        [(ngModel)] imported using FormsModule
+        <br>
+        <input type="text" [(ngModel)]="firstName">
+    </div>
+</div>
